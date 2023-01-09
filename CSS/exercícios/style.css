@@ -1,0 +1,45 @@
+* {
+  /* reset CSS */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.black_bg {
+  background-color: black;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+}
+
+.logo_rock {
+  width: 40px;
+}
+
+.logo_onebitcode {
+  width: 200px;
+}
+
+.btn {
+  display: flex;
+  gap: 10px; /* espaçamento dos flex itens */
+}
+
+.btnHeader {
+  font-size: 20px;
+  padding: 10px 15px;
+  background-color: transparent;
+  border-radius: 10px;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s; /* transição do efeito hover do elemento, deve ser adicionada no elemento e não na pseudoclass */
+}
+
+.btnHeader:hover {
+  border-color: #ff0044;
+}
