@@ -1,65 +1,33 @@
-const interativeMenu = prompt(
-"Olá, qual é a opção desejada?" +
-"\n1 - Primeira opção" +
-"\n2 - Seguinda opção" +
-"\n3 - Terceira opção" +
-"\n4 - Quarta opção" +
-"\n5 - Sair"
-)
+let interativeOption = ""
 
-switch (interativeMenu) {
-    case "1":
-        alert("A opção selecionada foi a 1 - Primeira opção")
-        prompt(
-            "Olá, qual é a opção desejada?" +
-            "\n1 - Primeira opção" +
-            "\n2 - Seguinda opção" +
-            "\n3 - Terceira opção" +
-            "\n4 - Quarta opção" +
-            "\n5 - Sair"
-)
-    case "2":
-        alert("A opção selecionada foi a 2 - Segunda opção")
-        prompt(
-            "Olá, qual é a opção desejada?" +
-            "\n1 - Primeira opção" +
-            "\n2 - Seguinda opção" +
-            "\n3 - Terceira opção" +
-            "\n4 - Quarta opção" +
-            "\n5 - Sair"
-)
-    case "3":
-        alert("A opção selecionada foi a 3 - Terceira opção")
-        prompt(
-            "Olá, qual é a opção desejada?" +
-            "\n1 - Primeira opção" +
-            "\n2 - Seguinda opção" +
-            "\n3 - Terceira opção" +
-            "\n4 - Quarta opção" +
-            "\n5 - Sair"
-)
-    case "4":
-        alert("A opção selecionada foi a 4 - Quarta opção")
-        prompt(
-            "Olá, qual é a opção desejada?" +
-            "\n1 - Primeira opção" +
-            "\n2 - Seguinda opção" +
-            "\n3 - Terceira opção" +
-            "\n4 - Quarta opção" +
-            "\n5 - Sair"
-)
-    case "5":
-        alert("Você escolheu 'Sair', o programa será encerrado.")
-        break
-    default:
-        alert("Opção inválida")
-}
+do { 
+    interativeOption = prompt(
+        "Seja bem vindo(a)\n"+
+        "\nEscolha uma das opções abaixo:"+
+        "\n1- Opção um" +
+        "\n2- Opção dois" +
+        "\n3- Opção três" +
+        "\n4- Opção quatro" +
+        "\n5- Encerrar" 
+    )
 
-/* while (interativeMenu !== "5"){
-    let selectedOption = alert ("A opção selecionada foi a número")
-    interativeMenu = prompt("Qual é a opção desejada?" +
-    "\n1 - Primeira opção" +
-    "\n2 - Seguinda opção" +
-    "\n3 - Terceira opção" +
-    "\n4 - Quarta opção" +
-    "\n5 - Sair") */
+    switch (interativeOption) {
+        case "1":
+            alert("Você escolheu a opção 1")
+            break
+        case "2":
+            alert("Você escolheu a opção 2")
+            break
+        case "3":
+            alert("Você escolheu a opção 3")
+            break
+        case "4":
+            alert("Você escolheu a opção 4")
+            break
+        case "5":
+            alert("Você escolheu encerrar")
+            break
+        default:
+            alert("Opção inválida.")
+    }
+} while (interativeOption !== "5")
