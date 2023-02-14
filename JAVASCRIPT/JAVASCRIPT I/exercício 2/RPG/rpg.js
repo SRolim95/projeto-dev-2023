@@ -40,5 +40,5 @@ alert(firstCharacter + " causou um dano total de " + damage +" em " + secondChar
 alert (
   firstCharacter + ": \nPoder de ataque: " + atkFirstCharacter + "\n\n" +
   secondCharacter + ": \nPontos de vida: " + hpSecondCharacter + "\n" +
-  "\nPoder de defesa: " + defSecondCharacter + "\nPossui escudo: " + shieldSecondCharacter
+  "\nPoder de defesa: " + defSecondCharacter + "\nPossui escudo: " + shieldSecondCharacter 
 )
